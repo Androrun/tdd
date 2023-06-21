@@ -1,0 +1,41 @@
+fun main() {
+
+    
+
+
+
+    testFindMax()
+
+}
+
+fun testFindMax() {
+
+    // Caso de prueba: Números positivos diferentes
+
+    val number1 = 7
+
+    val number2 = 12
+
+    val expectedResult = 12
+
+    val result = findMax(number1, number2)
+
+    println("Número 1: $number1, Número 2: $number2")
+
+    if (result == expectedResult) {
+
+        println("Test Passed: El número máximo es $result")
+
+    } else {
+
+        println("Test Failed: El resultado ($result) no coincide con el número máximo esperado ($expectedResult)")
+
+    }
+
+}
+
+fun findMax(number1: Int, number2: Int): Int {
+
+    return if (number1 > number2) number1 else number2
+
+}
