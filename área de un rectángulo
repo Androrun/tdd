@@ -1,0 +1,39 @@
+fun main() {
+
+    
+
+    testCalculateRectangleArea()
+
+}
+
+fun testCalculateRectangleArea() {
+
+    // Caso de prueba: Base y altura positivas
+
+    val base = 5.0
+
+    val height = 8.0
+
+    val expectedResult = 40.0
+
+    val result = calculateRectangleArea(base, height)
+
+    println("Base: $base, Altura: $height")
+
+    if (result == expectedResult) {
+
+        println("Test Passed: El área del rectángulo es $result")
+
+    } else {
+
+        println("Test Failed: El resultado ($result) no coincide con el área esperada ($expectedResult)")
+
+    }
+
+}
+
+fun calculateRectangleArea(base: Double, height: Double): Double {
+
+    return base * height
+
+}
