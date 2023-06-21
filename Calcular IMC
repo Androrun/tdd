@@ -1,0 +1,51 @@
+/**
+
+ * You can edit, run, and share this code.
+
+ * play.kotlinlang.org
+
+ */
+
+fun main() {
+
+ // Test de cálculo del IMC
+
+    testCalculateBMI()
+
+}
+
+fun testCalculateBMI() {
+
+    // Caso de prueba 1: Peso y altura válidos
+
+    val weight1 = 70.0 // kg
+
+    val height1 = 1.75 // metros
+
+    val expectedResult1 = 22.86
+
+    val result1 = calculateBMI(weight1, height1)
+
+    println("Test Case 1 - Peso: $weight1 kg, Altura: $height1 m, Resultado esperado: $expectedResult1, Resultado obtenido: $result1")
+
+    
+
+    // Caso de prueba 2: Peso y altura válidos
+
+    val weight2 = 85.0 // kg
+
+    val height2 = 1.80 // metros
+
+    val expectedResult2 = 26.23
+
+    val result2 = calculateBMI(weight2, height2)
+
+    println("Test Case 2 - Peso: $weight2 kg, Altura: $height2 m, Resultado esperado: $expectedResult2, Resultado obtenido: $result2")
+
+}
+
+fun calculateBMI(weight: Double, height: Double): Double {
+
+    return weight / (height * height)
+
+}
